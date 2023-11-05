@@ -1,2 +1,12 @@
+import random
+
 class Random:
-    pass
+    def __init__(self, seed=None):
+        if seed:
+            random.seed(seed)
+    
+    def randint(start, end):
+        return random.randint(start, end)
+    
+    def randfloat(start, end):
+        return random.uniform(start, end)
