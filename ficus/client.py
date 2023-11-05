@@ -39,6 +39,19 @@ def __combine_v2(lists):
 class Client:
     def __init__(self):
         self.__items = {}
+    
+    def set_status(self, statuses):
+        keys = statuses.items.keys()
+        tmp_statuses = []
+        for key in keys:
+            self.__items[key] = []
+            tmp_statuses.append(statuses.items[key])
+        
+        tmp_array2 = self.__combine(tmp_statuses)
+
+        for line in tmp_array2:
+            for item in line:
+                self.__items[item.column_name].append(item)
 
     def __combine(self, lists):
         if not lists:
