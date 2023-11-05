@@ -4,7 +4,7 @@ class ProportionalSequence:
         self.__b = b
         self.__size = size
         self.__items = []
-        for x in range(self._size):
+        for x in range(self.__size):
             self.__items.append(self.__a * x + self.__b)
     
     @property
@@ -17,7 +17,7 @@ class InverseProportinalSequence:
         self.__b = b
         self.__size = size
         self.__items = []
-        for x in range(self._size):
+        for x in range(self.__size):
             w = x + 1
             self.__items.append(self.__a / w + self.__b)
         
@@ -32,7 +32,7 @@ class QuadraticSequence:
         self.__c = c
         self.__size = size
         self.__items = []
-        for x in range(self._size):
+        for x in range(self.__size):
             self.__items.append(self.__a * x ** 2 + self.__b * x + self.__c)
     
     @property
@@ -46,7 +46,7 @@ class InverseQuadraticSequence:
         self.__c = c
         self.__size = size
         self.__items = []
-        for x in range(self._size):
+        for x in range(self.__size):
             w = x + 1
             self.__items.append(self.__a / w ** 2 + self.__b / w + self.__c)
     
