@@ -40,6 +40,10 @@ class Client:
     def __init__(self):
         self.__items = {}
     
+    @property
+    def items(self):
+        return self.__items
+    
     def set_status(self, statuses):
         keys = statuses.items.keys()
         tmp_statuses = []
