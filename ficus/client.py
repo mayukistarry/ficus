@@ -37,7 +37,11 @@ def __combine_v2(lists):
 
 
 class Client:
+    #カラム名を入れるとき、StatusとOrderやidとStatusなど違う種類の同名のカラムは弾くようにチェックの必要あり
     def __init__(self):
+        # keyをカラム名
+        # valueをリスト形式で、そのカラムの値を入れる
+        # {'a':[], 'b':[]}
         self.__items = {}
     
     @property
