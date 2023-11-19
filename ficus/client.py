@@ -60,6 +60,13 @@ class Client:
         for line in tmp_array2:
             for item in line:
                 self.__items[item.column_name].append(item)
+    
+    def set_order(self, order):
+        self.__multiply_record(order.size)
+    
+    def __multiply_record(self, size):
+        for key in self.__items.keys():
+            self.__items[key] = self.__items[key] * size
 
     def __combine(self, lists):
         if not lists:
