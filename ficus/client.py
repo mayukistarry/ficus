@@ -62,6 +62,7 @@ class Client:
                 self.__items[item.column_name].append(item)
     
     def set_order(self, order):
+        # ここはordersを入れる
         self.__multiply_record(order.size)
     
     def __multiply_record(self, size):
